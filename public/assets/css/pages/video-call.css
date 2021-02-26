@@ -1,0 +1,48 @@
+
+body,
+html {
+    background-color: black!important;
+    height: 100%;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+#subscriber {
+    position: absolute;
+    background-color: transparent!important;
+    width: 100%;
+    height:100%;
+    z-index: 10;
+}
+
+#publisher {
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    top: 0px;
+    left:0px;
+    z-index: 100;
+    border: 0px solid white;
+    border-radius: 3px;
+}
+
+#actionbar {
+    position: absolute;
+    width: 100%;
+    padding:20px;
+    border-top:1px solid lightgray;
+    bottom: 0px;
+    z-index: 100;
+    background-color:white
+}
+
+#pbar_outerdiv {
+    cursor: pointer;
+}
+
+.btn-circle{
+    height:50px!important;
+    width:50px;
+    padding:12px;
+    border-radius: 100px;
+}

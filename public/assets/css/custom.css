@@ -1,0 +1,56 @@
+/* put your own styles to customize and override the theme */
+.bg-subtle-primary{
+    background-color: #f3ddfc;
+}
+
+
+.font-size-mdi{
+    font-size: 1.3rem!important;
+    margin-top:0px!important;
+    float: left!important;
+}
+
+.menu-link{
+    min-width: 260px;
+}
+
+
+.menu-item .badge{
+    float: right!important;
+    margin-top:-2px!important;
+}
+/*.app-main{background-color:white!important}*/
+
+
+.rem {
+    font-size:0.9rem;
+}
+
+
+.cli,
+.cli:hover{
+    text-decoration:none;
+    color: black;
+
+}
+
+.cli:hover{
+    background-color:whitesmoke;
+    cursor: pointer;
+}
+
+.cursor-text{
+    cursor:text;
+}
+
+#page-message{
+    opacity: 1;
+    transition: all ease-out 300ms;
+}
+
+
+.position-absolute-center{
+    position: absolute;margin-left: auto;
+    margin-right: auto;left: 0;right: 0;text-align: center;
+
+}

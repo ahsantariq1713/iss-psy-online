@@ -35,15 +35,13 @@ class AppointmentClosedJob implements ShouldQueue
 
     public function updateStatus()
     {
-        if ($this->appointment->status == 'Active') {
-            if (is_null($this->appointment->therapist_attended_at)) {
-                $this->appointment->status = 'Cancelled';
-            } else {
-                $this->appointment->status = 'Completed';
-            }
-
-            $this->appointment->save();
+        if (is_null($this->appointment->therapist_attended_at)) {
+            $this->appointment->status = 'Cancelled';
+        } else {
+            $this->appointment->status = 'Completed';
         }
+
+        $this->appointment->save();
     }
 
     public function notifyUser(User $user)
